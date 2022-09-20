@@ -1,10 +1,11 @@
 package com.srohter.AppLauncher;
 
 import com.srohter.AppLauncher.Apps.Alma;
+import com.srohter.AppLauncher.GUI.App;
 
 public class ALMain {
     public static void main(String[] args) {
-        Alma alamOpener = new Alma();
-        alamOpener.openAlma();
+        App frame = new App();
+        frame.setVisible(true);
     }
 }

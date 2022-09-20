@@ -1,7 +1,5 @@
 package com.srohter.AppLauncher.Apps;
 
-import org.junit.jupiter.api.DisplayName;
-
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 
