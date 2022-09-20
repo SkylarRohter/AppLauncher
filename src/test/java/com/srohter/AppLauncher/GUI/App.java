@@ -1,6 +1,8 @@
 package com.srohter.AppLauncher.GUI;
 
 import com.srohter.AppLauncher.Apps.Alma;
+import com.srohter.AppLauncher.Apps.Word;
+import com.srohter.AppLauncher.Apps.Mail;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -49,6 +51,8 @@ public class App extends JFrame {
         JButton word = new JButton("");
         word.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                Word word = new Word();
+                word.openWord();
             }
         });
         word.setFont(new Font("Arial", Font.PLAIN, 13));
@@ -63,6 +67,8 @@ public class App extends JFrame {
         JButton mail = new JButton("");
         mail.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                Mail mail = new Mail();
+                mail.openMail();
             }
         });
         mail.setFont(new Font("Arial", Font.PLAIN, 13));

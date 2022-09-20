@@ -1,6 +1,5 @@
 package com.srohter.AppLauncher;
 
-import com.srohter.AppLauncher.Apps.Alma;
 import com.srohter.AppLauncher.GUI.App;
 
 public class ALMain {
