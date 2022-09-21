@@ -13,6 +13,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 
+/**
+ * @author Skylar Rohter
+ */
 public class App extends JFrame {
     private JPanel contentPane;
     private JPanel panel_1;
