@@ -138,5 +138,35 @@ public class App extends JFrame {
         lblSpotify.setFont(new Font("Arial", Font.PLAIN, 20));
         lblSpotify.setBounds(370, 152, 81, 47);
         panel_1.add(lblSpotify);
+
+        JCheckBox mailCheck = new JCheckBox("");
+        mailCheck.setFont(new Font("Arial", Font.PLAIN, 15));
+        mailCheck.setBounds(16, 217, 28, 23);
+        panel_1.add(mailCheck);
+
+        JCheckBox wordCheck = new JCheckBox("");
+        wordCheck.setFont(new Font("Arial", Font.PLAIN, 15));
+        wordCheck.setBounds(16, 268, 28, 23);
+        panel_1.add(wordCheck);
+
+        JCheckBox almaCheck = new JCheckBox("");
+        almaCheck.setFont(new Font("Arial", Font.PLAIN, 15));
+        almaCheck.setBounds(16, 316, 28, 23);
+        panel_1.add(almaCheck);
+
+        JCheckBox rbCheck = new JCheckBox("");
+        rbCheck.setFont(new Font("Arial", Font.PLAIN, 15));
+        rbCheck.setBounds(16, 171, 28, 23);
+        panel_1.add(rbCheck);
+
+        JButton start = new JButton("");
+        start.setFont(new Font("Arial", Font.PLAIN, 13));
+        start.setBounds(27, 122, 37, 37);
+        panel_1.add(start);
+
+        JLabel startText = new JLabel("start spf.");
+        startText.setFont(new Font("Arial", Font.PLAIN, 20));
+        startText.setBounds(68, 116, 87, 47);
+        panel_1.add(startText);
     }
 }
