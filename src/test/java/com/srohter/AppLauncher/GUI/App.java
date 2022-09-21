@@ -3,6 +3,7 @@ package com.srohter.AppLauncher.GUI;
 import com.srohter.AppLauncher.Apps.Alma;
 import com.srohter.AppLauncher.Apps.Word;
 import com.srohter.AppLauncher.Apps.Mail;
+import com.srohter.AppLauncher.Apps.Spotify;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -10,6 +11,7 @@ import javax.swing.border.SoftBevelBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashMap;
 
 public class App extends JFrame {
     private JPanel contentPane;
@@ -119,20 +121,22 @@ public class App extends JFrame {
         volume.setBounds(341, 238, 121, 29);
         panel_1.add(volume);
 
-        JButton spot = new JButton("");
-        spot.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        spot.setFont(new Font("Arial", Font.PLAIN, 13));
-        spot.setBounds(477, 211, 37, 37);
-        panel_1.add(spot);
-
         spotType = new JTextField();
         spotType.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
         spotType.setBounds(341, 200, 121, 26);
         panel_1.add(spotType);
         spotType.setColumns(10);
+
+        JButton spot = new JButton("");
+        spot.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                Spotify spotify = new Spotify(spotType.getText(),volume.getValue());
+                spotify.openSpotify();
+            }
+        });
+        spot.setFont(new Font("Arial", Font.PLAIN, 13));
+        spot.setBounds(477, 211, 37, 37);
+        panel_1.add(spot);
 
         JLabel lblSpotify = new JLabel("spotify");
         lblSpotify.setFont(new Font("Arial", Font.PLAIN, 20));
