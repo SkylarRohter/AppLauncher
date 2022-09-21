@@ -2,13 +2,10 @@ package com.srohter.AppLauncher.Apps;
 
 import com.srohter.AppLauncher.Utility.CheckOS;
 
-import java.awt.*;
-
 public class Mail {
     public void openMail(){
         try {
             Runtime runtime = Runtime.getRuntime();
-            Robot r = new Robot();
             String[] win = {"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "https://outlook.office.com/mail/"};
             String[] mac = {"/usr/bin/open", "-a", "/Applications/Google Chrome.app", "https://outlook.office.com/mail/"};
             String os = new CheckOS().getOs();

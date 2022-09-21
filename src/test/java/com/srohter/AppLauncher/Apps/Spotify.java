@@ -2,8 +2,6 @@ package com.srohter.AppLauncher.Apps;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -23,7 +21,7 @@ public class Spotify {
     public void openSpotify(){
         try {
             Robot mark = new Robot();
-            //setVolume(mark);
+            setVolume(mark);
             setSong(mark);
 
         }catch(AWTException e) {

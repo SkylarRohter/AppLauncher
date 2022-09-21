@@ -27,6 +27,5 @@ public class Alma {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //Hello
     }
 }
