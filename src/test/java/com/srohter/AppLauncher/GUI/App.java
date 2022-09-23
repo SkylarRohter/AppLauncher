@@ -1,9 +1,6 @@
 package com.srohter.AppLauncher.GUI;
 
-import com.srohter.AppLauncher.Apps.Alma;
-import com.srohter.AppLauncher.Apps.Word;
-import com.srohter.AppLauncher.Apps.Mail;
-import com.srohter.AppLauncher.Apps.Spotify;
+import com.srohter.AppLauncher.Apps.*;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -11,6 +8,7 @@ import javax.swing.border.SoftBevelBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 /**
  * @author Skylar Rohter
@@ -166,6 +164,17 @@ public class App extends JFrame {
         panel_1.add(rbCheck);
 
         JButton start = new JButton("");
+        start.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                ArrayList<Boolean> list = new ArrayList<>();
+                list.add(rbCheck.isSelected());
+                list.add(mailCheck.isSelected());
+                list.add(wordCheck.isSelected());
+                list.add(almaCheck.isSelected());
+                Starter starter = new Starter(list);
+                starter.makeStarter();
+            }
+        });
         start.setFont(new Font("Arial", Font.PLAIN, 13));
         start.setBounds(27, 122, 37, 37);
         panel_1.add(start);
